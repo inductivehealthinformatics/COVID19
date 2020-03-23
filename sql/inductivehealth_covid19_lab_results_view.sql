@@ -54,8 +54,6 @@ SELECT jur.code_desc_txt                                      AS 'Jurisdiction_D
           prv1.first_nm                                                                   AS 'Provider_First_Name',
           prv1.last_nm                                                                           AS 'Provider_Last_Name'
 
- 
-
 FROM   nbs_odse..observation o 
        INNER JOIN nbs_odse..participation p 
                ON o.observation_uid = p.act_uid 
